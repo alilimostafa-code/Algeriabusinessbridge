@@ -8,17 +8,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
 
 <header class="site-header">
   <div class="nav-wrap">
     <a href="index.html" class="logo">
-      <svg class="bridge-mark" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 14C4 6 9 2 13 2C17 2 22 6 25 14" stroke="#B48A3F" stroke-width="1.6"/>
-        <circle cx="1" cy="14" r="1.6" fill="#1C3F31"/>
-        <circle cx="25" cy="14" r="1.6" fill="#1C3F31"/>
-      </svg>
+      <img src="images/logo-mark.png" alt="" class="logo-img" style="height:40px;">
       <span>Algeria Business Bridge<span class="sub">Conseil &amp; Investissement</span></span>
     </a>
     <button class="nav-toggle" aria-label="Ouvrir le menu"><span></span></button>
@@ -57,17 +54,18 @@
       <div class="card">
         <h3 style="margin-bottom:.3em;">Formulaire de contact</h3>
         <p style="margin-bottom:24px;">Chaque demande est étudiée avec attention et fait l'objet d'un premier échange permettant de définir les prochaines étapes.</p>
-        <form class="contact-form">
+        <form class="contact-form" action="https://formspree.io/f/xwvgwoel" method="POST">
+          <input type="hidden" name="_subject" value="Nouveau message — Algeria Business Bridge">
           <div class="row2">
-            <div><label for="nom">Nom et prénom</label><input type="text" id="nom" name="nom" required></div>
-            <div><label for="entreprise">Entreprise</label><input type="text" id="entreprise" name="entreprise"></div>
+            <div><label for="nom">Nom et prénom</label><input type="text" id="nom" name="Nom et prénom" required></div>
+            <div><label for="entreprise">Entreprise</label><input type="text" id="entreprise" name="Entreprise"></div>
           </div>
           <div class="row2">
             <div><label for="email">Email</label><input type="email" id="email" name="email" required></div>
-            <div><label for="telephone">Téléphone</label><input type="tel" id="telephone" name="telephone"></div>
+            <div><label for="telephone">Téléphone</label><input type="tel" id="telephone" name="Téléphone"></div>
           </div>
           <div><label for="objet">Objet de contact</label>
-            <select id="objet" name="objet">
+            <select id="objet" name="Objet de contact">
               <option>Conseil stratégique &amp; études</option>
               <option>Ingénierie de projets &amp; investissement</option>
               <option>Accompagnement à l'implantation</option>
@@ -77,10 +75,11 @@
               <option>Autre</option>
             </select>
           </div>
-          <div><label for="message">Message</label><textarea id="message" name="message" required placeholder="Décrivez votre entreprise ou activité, la nature de votre projet, le secteur, vos objectifs et la région ciblée."></textarea></div>
+          <div><label for="message">Message</label><textarea id="message" name="Message" required placeholder="Décrivez votre entreprise ou activité, la nature de votre projet, le secteur, vos objectifs et la région ciblée."></textarea></div>
           <button type="submit" class="btn">Envoyer le message</button>
+          <p class="form-status" role="status" aria-live="polite" style="display:none;"></p>
         </form>
-        <p class="form-note">Ce formulaire est prêt côté design ; pour recevoir réellement les messages, il faudra le relier à un service d'envoi d'e-mails (ex. Formspree, EmailJS) ou à une adresse mail lors de la mise en ligne.</p>
+        <p class="form-note">Les messages envoyés via ce formulaire arrivent directement dans la boîte mail d'Alili Mostafa (via Formspree).</p>
       </div>
 
       <div>
@@ -132,9 +131,8 @@
       <div>
         <h4>Contact</h4>
         <ul>
-          <li>alili.mostafa@gmail.com</li>
-          <li>+213 0557 92 44 92</li>
-          <li>Aflou, Algérie</li>
+          <li><strong>Alili Mostafa</strong><br>alili.mostafa@gmail.com<br>+213 0557 92 44 92<br>Aflou, Algérie</li>
+          <li><strong>Ali Mouas</strong><br>agroconseil2016@gmail.com<br>+213 0555 68 74 08<br>Mohammadia, Alger, Algérie</li>
         </ul>
       </div>
     </div>
