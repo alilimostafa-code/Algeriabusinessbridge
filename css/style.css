@@ -110,6 +110,12 @@ nav.primary a:hover,nav.primary a.active{border-color:var(--or-500);color:var(--
 .btn.dark-outline{background:rgba(255,255,255,.92);color:var(--bleu-700);border-color:rgba(255,255,255,.92);}
 .btn.dark-outline:hover{background:var(--bleu-700);color:var(--blanc);border-color:var(--bleu-700);}
 .nav-toggle{display:none;}
+.lang-switch{
+  font-size:.74rem;font-weight:700;letter-spacing:.04em;
+  color:var(--gris-600)!important;border:1px solid var(--gris-300);
+  border-radius:999px;padding:5px 12px!important;
+}
+.lang-switch:hover{color:var(--vert-700)!important;border-color:var(--vert-700);}
 .logo-img{height:44px;width:auto;flex:none;}
 
 /* ---------- hero ---------- */
